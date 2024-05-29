@@ -16,5 +16,23 @@ function countLike2() {
 }
 btnLike2.addEventListener("click", countLike2)
 
+const btnDisLike3 = document.getElementById("btnDisLike3")
+const count3 = document.getElementById("count3")
+
+function countDisLike3() {
+  let likeCounts = parseInt(count3.value) + 1
+  count3.textContent = likeCounts.toString()
+}
+btnDisLike3.addEventListener("click", countDisLike3)
+
+const btnDisLike4 = document.getElementById("btnDisLike4")
+const count4 = document.getElementById("count4")
+
+function countDisLike4() {
+  let likeCounts = parseInt(count4.value) + 1
+  count4.textContent = likeCounts.toString()
+}
+btnDisLike4.addEventListener("click", countDisLike4)
+
 
 
