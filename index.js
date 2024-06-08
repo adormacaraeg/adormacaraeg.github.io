@@ -38,10 +38,10 @@ const submit = document.getElementById("submit")
 const comment = document.getElementById("comment")
 const commentbox = document.ElementById("commentbox")
 
-function Submitcomment(){
+function submitcomment(){
  commentbox.textContent += comment.value.toString() +"\n"
   
 }
-submit.addEventListener("click",Submitcomment)
+submit.addEventListener("click",submitcomment)
 
 
