@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
  <title>Ador</title>
@@ -9,31 +10,83 @@
 
   <body>
 <div class="container">
-<div class="row">
-  <div class="col-4">
-   <h1>Beluga</h1>
-<img src="2.jpg" class="img-thumbnail" style="height:500px;width:500px;"/>
-<button type="button" class="btn btn-primary" id="btnLike1"> Like </button>
-   <output id="count1">0</output>
-<button type="button" class="btn btn btn-primary" id="btnDisLike3"> DisLike </button>
-   <output id="count3">0</output>
-  </div>
- <div class="col-4">
-   <h1>Bulaga</h1>
-<img src="3.jpg" class="img-thumbnail" style="height:500px;width:500px;"/>
-<button type="button" class="btn btn-primary" id="btnLike2"> Like </button>
-  <output id="count2">0</output>
-<button type="button" class=" btn btn-primary" id="btnDisLike4"> DisLike </button>
-  <output id="count4">0</output>
-  </div>
- <div class="col-4">
-<h1>Comments</h1>  <br>
-  <input type="text" class="form-control" id="comment"/>
-   <button class="btn btn-success" id="submit">Submit</button>
-  <textarea class="form-control" id="commentbox" rows=12></textarea>
- </div>
-</div>
-</div>
+    <div class="row">
+        <div class="col-12">
+            <h6>Ador Macaraeg II
+                BSIT 3C
+            </h6>
+            <center><h2>Bornok's Hardware Store</h2></center>
+            <hr class="hr"/> 
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <label id="product1">Drill</label><br>
+                <img src="drill.jpg" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product1" id="price1">1500.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty1" placeholder="Enter Quantity"/>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product2">Tape Measure</label>
+                <img src="tape measure.jpg" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product2" id="price2">350.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty2" placeholder="Enter Quantity"/>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product3">Saw</label><br>
+                <img src="saw.jpg" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product3" id="price3">500.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty3" placeholder="Enter Quantity"/>
+            </div>
+            </div>
+            <div class="row"> 
+            <div class="col-4 text-center">
+                <br>
+                <br>
+                <label id="product4">Pliers</label><br>
+                <img src="plier.jpg" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product4" id="price4">450.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty4" placeholder="Enter Quantity"/>
+            </div>
+            <div class="col-4 text-center">
+                <br>
+                <br>
+                <label id="product5">SrewDriver</label><br>
+                <img src="screwdriver.png" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product5" id="price5">650.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty5" placeholder="Enter Quantity"/>
+            </div>
+            <div class="col-4 text-center">
+                <br>
+                <br>
+                <label id="product6">Hammer</label><br>
+                <img src="hammer.jpg" alt="" class="img-thumbnail" height="250px" width="250px">
+                <br>
+                <label for="product6" id="price6">900.00</label>
+                <br>
+                <input type="numder" class="form-control" id="qty6" placeholder="Enter Quantity">
+            </div>
+        </div>
+        <div class="col-8">
+            <label for="carts">Orders</label>
+            <textarea class="form-control" rows="29" id="carts" cols="200" readonly style="width: 350px; height: 400px;"></textarea>
+            <input type="text" class="form-control border-0" id="total" readonly placeholder="Total">
+            <input type="number" class="form-control" id="cash" placeholder="Cash Tender">
+            <input type="text" class="form-control border-0" id="change" readonly placeholder="Change">
+            <br>
+
+        </div>
+    </div>
+ </div> 
     
  
   
