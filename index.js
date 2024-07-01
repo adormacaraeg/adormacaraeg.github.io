@@ -29,6 +29,21 @@ function calculateChange() {
     }
 }
 
+// Function to show purchase details and reset the page
+function showPurchaseAndReset() {
+    // Show purchase details (alert for demonstration)
+    let cartContent = document.getElementById("carts").value;
+    alert(`Purchase Details:\n\n${cartContent}`);
+
+    // Reset the form and refresh the page
+    document.getElementById("orderForm").reset();
+    updateCart(); // Update cart display after reset
+    calculateChange(); // Recalculate change after reset
+
+    // Refresh the page
+    location.reload();
+}
+
 // Event listeners for quantity inputs
 for (let i = 1; i <= 6; i++) {
     document.getElementById(`qty${i}`).addEventListener("keyup", updateCart);
@@ -37,9 +52,22 @@ for (let i = 1; i <= 6; i++) {
 // Event listener for cash input
 document.getElementById("cash").addEventListener("keyup", calculateChange);
 
+// Event listener for Order button
+document.getElementById("orderButton").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission (if this is a form button)
 
+    // Show purchase details and reset the page
+    showPurchaseAndReset();
+});
 
+// Event listener for window load (to handle the page refresh)
+window.addEventListener("load", function() {
+    // Check if there's a query parameter indicating a purchase confirmation
+    const urlParams = new URLSearchParams(window.location.search);
+    const purchaseConfirmed = urlParams.get('purchaseConfirmed');
 
-
-
-
+    // If purchase is confirmed, show the purchase details and reset the page
+    if (purchaseConfirmed === 'true') {
+        showPurchaseAndReset();
+    }
+});
