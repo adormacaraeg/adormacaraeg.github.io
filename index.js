@@ -1,9 +1,9 @@
-// Function to update cart
+
 function updateCart() {
     let cartContent = "";
     let totalCost = 0;
 
-    // Product 1
+    
     let qty1 = parseFloat(document.getElementById("qty1").value);
     let price1 = parseFloat(document.getElementById("price1").textContent);
     if (!isNaN(qty1) && qty1 > 0) {
@@ -12,7 +12,7 @@ function updateCart() {
         cartContent += `${qty1} pc/s x ${price1.toFixed(2)} ------ ${document.getElementById("product1").textContent} ------ Php ${subtotal1.toFixed(2)}\n`;
     }
 
-    // Product 2
+    
     let qty2 = parseFloat(document.getElementById("qty2").value);
     let price2 = parseFloat(document.getElementById("price2").textContent);
     if (!isNaN(qty2) && qty2 > 0) {
@@ -21,7 +21,7 @@ function updateCart() {
         cartContent += `${qty2} pc/s x ${price2.toFixed(2)} ------ ${document.getElementById("product2").textContent} ------ Php ${subtotal2.toFixed(2)}\n`;
     }
  
-    // Product 3
+    
     let qty3 = parseFloat(document.getElementById("qty3").value);
     let price3 = parseFloat(document.getElementById("price3").textContent);
     if (!isNaN(qty3) && qty3 > 0) {
@@ -30,7 +30,7 @@ function updateCart() {
         cartContent += `${qty3} pc/s x ${price3.toFixed(2)} ------ ${document.getElementById("product3").textContent} ------ Php ${subtotal3.toFixed(2)}\n`;
     }
  
-    // Product 4
+    
     let qty4 = parseFloat(document.getElementById("qty4").value);
     let price4 = parseFloat(document.getElementById("price4").textContent);
     if (!isNaN(qty4) && qty4 > 0) {
@@ -39,7 +39,7 @@ function updateCart() {
         cartContent += `${qty4} pc/s x ${price4.toFixed(2)} ------ ${document.getElementById("product4").textContent} ------ Php ${subtotal4.toFixed(2)}\n`;
     }
  
-    // Product 5
+    
     let qty5 = parseFloat(document.getElementById("qty5").value);
     let price5 = parseFloat(document.getElementById("price5").textContent);
     if (!isNaN(qty5) && qty5 > 0) {
@@ -48,7 +48,7 @@ function updateCart() {
         cartContent += `${qty5} pc/s x ${price5.toFixed(2)} ------ ${document.getElementById("product5").textContent} ------ Php ${subtotal5.toFixed(2)}\n`;
     }
  
-    // Product 6
+    
     let qty6 = parseFloat(document.getElementById("qty6").value);
     let price6 = parseFloat(document.getElementById("price6").textContent);
     if (!isNaN(qty6) && qty6 > 0) {
@@ -57,12 +57,12 @@ function updateCart() {
         cartContent += `${qty6} pc/s x ${price6.toFixed(2)} ------ ${document.getElementById("product6").textContent} ------ Php ${subtotal6.toFixed(2)}\n`;
     }
 
-    // Update cart content
+    
     document.getElementById("carts").value = cartContent;
     document.getElementById("total").value = totalCost.toFixed(2);
 
-    // Calculate change
-    calculateChange(); // Call calculateChange() after updating cart
+    
+    calculateChange(); 
 }
 
 // Function to calculate change
@@ -76,7 +76,7 @@ function calculateChange() {
     }
 }
 
-// Function to show purchase details
+
 function showPurchase() {
     let cartContent = document.getElementById("carts").value;
 
@@ -85,7 +85,7 @@ function showPurchase() {
     }
 }
 
-// Event listeners
+
 document.getElementById("qty1").addEventListener("keyup", updateCart);
 document.getElementById("qty2").addEventListener("keyup", updateCart);
 document.getElementById("qty3").addEventListener("keyup", updateCart);
